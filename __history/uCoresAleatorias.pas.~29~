@@ -1,0 +1,441 @@
+unit uCoresAleatorias;
+
+interface
+
+uses
+  System.Classes,
+  System.Math,
+  System.SysUtils,
+  System.Variants,
+
+  Vcl.Controls,
+  Vcl.Dialogs,
+  Vcl.ExtCtrls,
+  Vcl.Forms,
+  Vcl.Graphics,
+  Vcl.StdCtrls,
+
+  Winapi.Messages,
+  Winapi.Windows;
+
+type
+  TPaletaCores = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Panel5: TPanel;
+    Panel6: TPanel;
+    Panel7: TPanel;
+    Panel8: TPanel;
+    Panel9: TPanel;
+    Panel10: TPanel;
+    Panel11: TPanel;
+    Panel12: TPanel;
+    Panel13: TPanel;
+    Panel14: TPanel;
+    Panel15: TPanel;
+    Panel16: TPanel;
+    Panel17: TPanel;
+    Panel18: TPanel;
+    Panel19: TPanel;
+    Panel20: TPanel;
+    Panel21: TPanel;
+    Panel22: TPanel;
+    Panel23: TPanel;
+    Panel24: TPanel;
+    Panel25: TPanel;
+    paleta1: TPanel;
+    paleta2: TPanel;
+    paleta3: TPanel;
+    paleta4: TPanel;
+    btGerar: TButton;
+    btResetar: TButton;
+    Panel26: TPanel;
+    Panel27: TPanel;
+    Panel28: TPanel;
+    Panel29: TPanel;
+    edTamanho: TEdit;
+    lbAltura: TLabel;
+    btPixel: TButton;
+    procedure paleta1Click(Sender: TObject);
+    procedure paleta2Click(Sender: TObject);
+    procedure paleta3Click(Sender: TObject);
+    procedure paleta4Click(Sender: TObject);
+    procedure Panel1Click(Sender: TObject);
+    procedure Panel2Click(Sender: TObject);
+    procedure Panel3Click(Sender: TObject);
+    procedure Panel4Click(Sender: TObject);
+    procedure Panel5Click(Sender: TObject);
+    procedure Panel7Click(Sender: TObject);
+    procedure Panel8Click(Sender: TObject);
+    procedure Panel9Click(Sender: TObject);
+    procedure Panel10Click(Sender: TObject);
+    procedure Panel11Click(Sender: TObject);
+    procedure Panel12Click(Sender: TObject);
+    procedure Panel13Click(Sender: TObject);
+    procedure Panel14Click(Sender: TObject);
+    procedure Panel15Click(Sender: TObject);
+    procedure Panel16Click(Sender: TObject);
+    procedure Panel17Click(Sender: TObject);
+    procedure Panel18Click(Sender: TObject);
+    procedure Panel19Click(Sender: TObject);
+    procedure Panel20Click(Sender: TObject);
+    procedure Panel21Click(Sender: TObject);
+    procedure Panel22Click(Sender: TObject);
+    procedure Panel23Click(Sender: TObject);
+    procedure Panel24Click(Sender: TObject);
+    procedure Panel25Click(Sender: TObject);
+    procedure btGerarClick(Sender: TObject);
+    procedure Panel6Click(Sender: TObject);
+    procedure btResetarClick(Sender: TObject);
+    procedure btPixelClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+    cor : integer;
+  public
+    { Public declarations }
+  end;
+
+var
+  PaletaCores: TPaletaCores;
+
+implementation
+
+{$R *.dfm}
+
+procedure TPaletaCores.btGerarClick(Sender: TObject);
+begin
+  paleta1.Color := clBlack;
+  paleta2.Color := RGB(RandomRange(0,255), RandomRange(0,255), RandomRange(0,255));
+  paleta3.Color := RGB(RandomRange(0,255), RandomRange(0,255), RandomRange(0,255));
+  paleta4.Color := RGB(RandomRange(0,255), RandomRange(0,255), RandomRange(0,255));
+end;
+
+procedure TPaletaCores.Panel10Click(Sender: TObject);
+begin
+  Panel10.Color := cor;
+end;
+
+procedure TPaletaCores.Panel11Click(Sender: TObject);
+begin
+  Panel11.Color := cor;
+end;
+
+procedure TPaletaCores.Panel12Click(Sender: TObject);
+begin
+  Panel12.Color := cor;
+end;
+
+procedure TPaletaCores.Panel13Click(Sender: TObject);
+begin
+  Panel13.Color := cor;
+end;
+
+procedure TPaletaCores.Panel14Click(Sender: TObject);
+begin
+  Panel14.Color := cor;
+end;
+
+procedure TPaletaCores.Panel15Click(Sender: TObject);
+begin
+  Panel15.Color := cor;
+end;
+
+procedure TPaletaCores.Panel16Click(Sender: TObject);
+begin
+  Panel16.Color := cor;
+end;
+
+procedure TPaletaCores.Panel17Click(Sender: TObject);
+begin
+  Panel17.Color := cor;
+end;
+
+procedure TPaletaCores.Panel18Click(Sender: TObject);
+begin
+  Panel18.Color := cor;
+end;
+
+procedure TPaletaCores.Panel19Click(Sender: TObject);
+begin
+  Panel19.Color := cor;
+end;
+
+procedure TPaletaCores.Panel1Click(Sender: TObject);
+begin
+  Panel1.Color := cor;
+end;
+
+procedure TPaletaCores.Panel20Click(Sender: TObject);
+begin
+  Panel20.Color := cor;
+end;
+
+procedure TPaletaCores.Panel21Click(Sender: TObject);
+begin
+  Panel21.Color := cor;
+end;
+
+procedure TPaletaCores.Panel22Click(Sender: TObject);
+begin
+  Panel22.Color := cor;
+end;
+
+procedure TPaletaCores.Panel23Click(Sender: TObject);
+begin
+  Panel23.Color := cor;
+end;
+
+procedure TPaletaCores.Panel24Click(Sender: TObject);
+begin
+  Panel24.Color := cor;
+end;
+
+procedure TPaletaCores.Panel25Click(Sender: TObject);
+begin
+  Panel25.Color := cor;
+end;
+
+procedure TPaletaCores.Panel2Click(Sender: TObject);
+begin
+  Panel2.Color := cor;
+end;
+
+procedure TPaletaCores.Panel3Click(Sender: TObject);
+begin
+  Panel3.Color := cor;
+end;
+
+procedure TPaletaCores.Panel4Click(Sender: TObject);
+begin
+  Panel4.Color := cor;
+end;
+
+procedure TPaletaCores.Panel5Click(Sender: TObject);
+begin
+  Panel5.Color := cor;
+end;
+
+procedure TPaletaCores.Panel6Click(Sender: TObject);
+begin
+  Panel6.Color := cor;
+end;
+
+procedure TPaletaCores.Panel7Click(Sender: TObject);
+begin
+  Panel7.Color := cor;
+end;
+
+procedure TPaletaCores.Panel8Click(Sender: TObject);
+begin
+  Panel8.Color := cor;
+end;
+
+procedure TPaletaCores.Panel9Click(Sender: TObject);
+begin
+  Panel9.Color := cor;
+end;
+
+procedure TPaletaCores.btPixelClick(Sender: TObject);
+begin
+  if edTamanho.Text < '10' then
+    begin
+      ShowMessage('O tamanho não pode ser menor que 10!');
+      Abort;
+    end
+  else
+    begin
+      //Altura
+      Panel1.Height   := strtoint(edTamanho.Text);
+      Panel2.Height   := strtoint(edTamanho.Text);
+      Panel3.Height   := strtoint(edTamanho.Text);
+      Panel4.Height   := strtoint(edTamanho.Text);
+      Panel5.Height   := strtoint(edTamanho.Text);
+      Panel6.Height   := strtoint(edTamanho.Text);
+      Panel7.Height   := strtoint(edTamanho.Text);
+      Panel8.Height   := strtoint(edTamanho.Text);
+      Panel9.Height   := strtoint(edTamanho.Text);
+      Panel10.Height  := strtoint(edTamanho.Text);
+      Panel11.Height  := strtoint(edTamanho.Text);
+      Panel12.Height  := strtoint(edTamanho.Text);
+      Panel13.Height  := strtoint(edTamanho.Text);
+      Panel14.Height  := strtoint(edTamanho.Text);
+      Panel15.Height  := strtoint(edTamanho.Text);
+      Panel16.Height  := strtoint(edTamanho.Text);
+      Panel17.Height  := strtoint(edTamanho.Text);
+      Panel18.Height  := strtoint(edTamanho.Text);
+      Panel19.Height  := strtoint(edTamanho.Text);
+      Panel20.Height  := strtoint(edTamanho.Text);
+      Panel21.Height  := strtoint(edTamanho.Text);
+      Panel22.Height  := strtoint(edTamanho.Text);
+      Panel23.Height  := strtoint(edTamanho.Text);
+      Panel24.Height  := strtoint(edTamanho.Text);
+      Panel25.Height  := strtoint(edTamanho.Text);
+
+      //Largura
+      Panel1.Width := strtoint(edTamanho.Text);
+      Panel2.Width := strtoint(edTamanho.Text);
+      Panel3.Width := strtoint(edTamanho.Text);
+      Panel4.Width := strtoint(edTamanho.Text);
+      Panel5.Width := strtoint(edTamanho.Text);
+      Panel6.Width := strtoint(edTamanho.Text);
+      Panel7.Width := strtoint(edTamanho.Text);
+      Panel8.Width := strtoint(edTamanho.Text);
+      Panel9.Width := strtoint(edTamanho.Text);
+      Panel10.Width := strtoint(edTamanho.Text);
+      Panel11.Width := strtoint(edTamanho.Text);
+      Panel12.Width := strtoint(edTamanho.Text);
+      Panel13.Width := strtoint(edTamanho.Text);
+      Panel14.Width := strtoint(edTamanho.Text);
+      Panel15.Width := strtoint(edTamanho.Text);
+      Panel16.Width := strtoint(edTamanho.Text);
+      Panel17.Width := strtoint(edTamanho.Text);
+      Panel18.Width := strtoint(edTamanho.Text);
+      Panel19.Width := strtoint(edTamanho.Text);
+      Panel20.Width := strtoint(edTamanho.Text);
+      Panel21.Width := strtoint(edTamanho.Text);
+      Panel22.Width := strtoint(edTamanho.Text);
+      Panel23.Width := strtoint(edTamanho.Text);
+      Panel24.Width := strtoint(edTamanho.Text);
+      Panel25.Width := strtoint(edTamanho.Text);
+
+      edTamanho.Clear;
+    end;
+end;
+
+procedure TPaletaCores.btResetarClick(Sender: TObject);
+begin
+  paleta1.color := $00E8E8E8;
+  paleta2.Color := $00E8E8E8;
+  paleta3.Color := $00E8E8E8;
+  paleta4.Color := $00E8E8E8;
+  Panel1.Color  := $00E8E8E8;
+  Panel2.Color  := $00E8E8E8;
+  Panel3.Color  := $00E8E8E8;
+  Panel4.Color  := $00E8E8E8;
+  Panel5.Color  := $00E8E8E8;
+  Panel6.Color  := $00E8E8E8;
+  Panel7.Color  := $00E8E8E8;
+  Panel8.Color  := $00E8E8E8;
+  Panel9.Color  := $00E8E8E8;
+  Panel10.Color := $00E8E8E8;
+  Panel11.Color := $00E8E8E8;
+  Panel12.Color := $00E8E8E8;
+  Panel13.Color := $00E8E8E8;
+  Panel14.Color := $00E8E8E8;
+  Panel15.Color := $00E8E8E8;
+  Panel16.Color := $00E8E8E8;
+  Panel17.Color := $00E8E8E8;
+  Panel18.Color := $00E8E8E8;
+  Panel19.Color := $00E8E8E8;
+  Panel20.Color := $00E8E8E8;
+  Panel21.Color := $00E8E8E8;
+  Panel22.Color := $00E8E8E8;
+  Panel23.Color := $00E8E8E8;
+  Panel24.Color := $00E8E8E8;
+  Panel25.Color := $00E8E8E8;
+
+  Panel1.Height  := 65;
+  Panel2.Height  := 65;
+  Panel3.Height  := 65;
+  Panel4.Height  := 65;
+  Panel5.Height  := 65;
+  Panel6.Height  := 65;
+  Panel7.Height  := 65;
+  Panel8.Height  := 65;
+  Panel9.Height  := 65;
+  Panel10.Height := 65;
+  Panel11.Height := 65;
+  Panel12.Height := 65;
+  Panel13.Height := 65;
+  Panel14.Height := 65;
+  Panel15.Height := 65;
+  Panel16.Height := 65;
+  Panel17.Height := 65;
+  Panel18.Height := 65;
+  Panel19.Height := 65;
+  Panel20.Height := 65;
+  Panel21.Height := 65;
+  Panel22.Height := 65;
+  Panel23.Height := 65;
+  Panel24.Height := 65;
+  Panel25.Height := 65;
+
+  Panel1.Width  := 81;
+  Panel2.Width  := 81;
+  Panel3.Width  := 81;
+  Panel4.Width  := 81;
+  Panel5.Width  := 81;
+  Panel6.Width  := 81;
+  Panel7.Width  := 81;
+  Panel8.Width  := 81;
+  Panel9.Width  := 81;
+  Panel10.Width := 81;
+  Panel11.Width := 81;
+  Panel12.Width := 81;
+  Panel13.Width := 81;
+  Panel14.Width := 81;
+  Panel15.Width := 81;
+  Panel16.Width := 81;
+  Panel17.Width := 81;
+  Panel18.Width := 81;
+  Panel19.Width := 81;
+  Panel20.Width := 81;
+  Panel21.Width := 81;
+  Panel22.Width := 81;
+  Panel23.Width := 81;
+  Panel24.Width := 81;
+  Panel25.Width := 81;
+
+  Panel26.Visible := False;
+  Panel27.Visible := False;
+  Panel28.Visible := False;
+  Panel29.Visible := False;
+
+  edTamanho.Clear;
+end;
+
+procedure TPaletaCores.FormCreate(Sender: TObject);
+begin
+  cor := $00E8E8E8;
+end;
+
+procedure TPaletaCores.paleta1Click(Sender: TObject);
+begin
+  cor := paleta1.color;
+  Panel26.Visible := True;
+  Panel27.Visible := False;
+  Panel28.Visible := False;
+  Panel29.Visible := False;
+end;
+
+procedure TPaletaCores.paleta2Click(Sender: TObject);
+begin
+  cor := paleta2.color;
+  Panel26.Visible := False;
+  Panel27.Visible := True;
+  Panel28.Visible := False;
+  Panel29.Visible := False;
+end;
+
+procedure TPaletaCores.paleta3Click(Sender: TObject);
+begin
+  cor := paleta3.color;
+  Panel26.Visible := False;
+  Panel27.Visible := False;
+  Panel28.Visible := True;
+  Panel29.Visible := False;
+end;
+
+procedure TPaletaCores.paleta4Click(Sender: TObject);
+begin
+  cor := paleta4.color;
+  Panel26.Visible := False;
+  Panel27.Visible := False;
+  Panel28.Visible := False;
+  Panel29.Visible := True;
+end;
+
+end.
